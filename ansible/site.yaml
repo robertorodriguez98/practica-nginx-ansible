@@ -3,17 +3,13 @@
   roles:
    - role: commons
 
-- hosts: grupo_sw
-  become: true
-  roles:
-   - role: nginx
-
 - hosts: servidorweb
   become: true
   roles:
-    - role: php
-
-
+   - role: nginx
+   - role: php
+   - role: virtualhost
+   - role: borrarVhost
 
   
 
