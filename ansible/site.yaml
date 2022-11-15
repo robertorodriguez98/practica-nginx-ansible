@@ -6,6 +6,14 @@
 - hosts: grupo_sw
   become: true
   roles:
-   - role: apache2
+   - role: nginx
+
+- hosts: servidorweb
+  become: true
+  roles:
+    - role: php
+
+
+
   
 
