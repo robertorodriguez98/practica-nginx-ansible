@@ -1,19 +1,11 @@
-- name: Install apache2
+- name: Install nginx
   apt:
-    pkg: apache2
-  
-- name: Enable Apache mods.
-  community.general.apache2_module:
-    state: present
-    name: "{{item}}"
-  with_items: 
-    - "{{ mods_enabled }}"
-  notify: restart apache2
+    pkg: nginx
 
 - name: Configuración de virtualhost
   template: 
-    src: etc/apache2/sites-available/vhost.j2
-    dest: /etc/apache2/sites-available/{{item["name"]}}.conf
+    src: etc/nginx/sites-available/vhost.j2
+    dest: /etc/nginx/sites-available/{{item["name"]}}.conf
     owner: root
     group: root
     mode: 0644
