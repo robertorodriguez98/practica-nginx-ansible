@@ -1,0 +1,3 @@
+- name: Instalar php y sus componentes
+  apt:
+    pkg: nginx

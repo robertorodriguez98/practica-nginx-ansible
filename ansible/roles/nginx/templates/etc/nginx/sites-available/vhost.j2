@@ -6,7 +6,7 @@ server {
 
     server_name {{item.datos.nameserver}};
     
-    rewrite /directorio$ /nuevodirectorio;
+    rewrite /directorio /nuevodirectorio;
 
     location / {
         try_files $uri $uri/ /index.html;
