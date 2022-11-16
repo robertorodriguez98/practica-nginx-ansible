@@ -1,3 +1,5 @@
 - name: Instalar php y sus componentes
   apt:
-    pkg: nginx
+    pkg:
+      - php
+      - php-fpm
