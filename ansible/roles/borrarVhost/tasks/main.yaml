@@ -4,3 +4,5 @@
     state: absent
   with_items:
     - "{{borrado}}"
+  notify: restart nginx
+  

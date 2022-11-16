@@ -14,8 +14,7 @@
 
 - name: Create documentroot if it does not exist
   ansible.builtin.file:
-    path: /{item["datos"]["documentroot"]}}
-    state: dir{item["datos"]["documentroot"]}}
+    path: /{{item["datos"]["documentroot"]}}
     state: directory
     owner: www-data
     group: www-data

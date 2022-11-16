@@ -13,5 +13,5 @@ virtualhosts:
       errorlog: error_pagina2
       accesslog: access_pagina2
 
-#borrado:
-#  - name: pagina2
+borrado:
+  - name: pagina2

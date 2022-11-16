@@ -8,7 +8,6 @@
   roles:
    - role: nginx
    - role: php
-   - role: virtualhost
    - role: borrarVhost
 
   
