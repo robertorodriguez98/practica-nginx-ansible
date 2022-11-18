@@ -1,0 +1,15 @@
+location /documentos/ {
+        alias /srv/doc;
+        autoindex on;
+        allow all;
+    }
+---------------------------
+location = / {
+  return 301 /principal;
+}
+---------------------------
+ sed -i 's/"\//"\/principal\//g' index.html
+---------------------------
+disable_symlinks on
+---------------------------
+htpasswd -c /etc/nginx/.htpasswd roberto
