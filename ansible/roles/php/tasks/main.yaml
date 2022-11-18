@@ -3,3 +3,4 @@
     pkg:
       - php
       - php-fpm
+  notify: restart nginx

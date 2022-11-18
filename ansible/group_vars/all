@@ -1,17 +1,23 @@
 # apache2
 virtualhosts:
-  - name: pagina1
+  - name: app1
     datos:
-      nameserver: www.pagina1.org
-      documentroot: /srv/www/pagina1
-      errorlog: error_pagina1
-      accesslog: access_pagina1
-  - name: pagina2
+      nameserver: www.app1.org
+      documentroot: /var/www/app1
+      errorlog: error_app1
+      accesslog: access_app1
+  - name: app2
     datos:
-      nameserver: www.pagina2.org
-      documentroot: /srv/www/pagina2
-      errorlog: error_pagina2
-      accesslog: access_pagina2
+      nameserver: www.app2.org
+      documentroot: /var/www/app2
+      errorlog: error_app2
+      accesslog: access_app2
+  - name: app3
+    datos:
+      nameserver: www.app3.org
+      documentroot: /var/www/app3
+      errorlog: error_app3
+      accesslog: access_app3
 
 borrado:
-  - name: pagina2
+  - name: app3
